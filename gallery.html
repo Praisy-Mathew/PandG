@@ -153,39 +153,69 @@
                 </div>
             </div>
         </header>
-         <style>
-    .navbar-nav li a {
-        font-weight: 600;
-        color: #000; /* default color */
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
-    }
+        <style>
+            .navbar-nav li a {
+                font-weight: 600;
+                color: #000;
+                /* default color */
+                transition: all 0.3s ease;
+                position: relative;
+                display: inline-block;
+            }
 
-    .navbar-nav li a:hover,
-    .navbar-nav li a:focus {
-        background: linear-gradient(to right, #0066cb, #fe0032);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-decoration: none;
-    }
-</style>
+            .navbar-nav li a:hover,
+            .navbar-nav li a:focus {
+                background: linear-gradient(to right, #0066cb, #fe0032);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-decoration: none;
+            }
+        </style>
+        <style>
+            .social-bx li a i {
+                color: #000;
+                /* Default color */
+                font-size: 20px;
+                transition: all 0.3s ease;
+            }
+
+            .social-bx li a:hover i,
+            .social-bx li a:focus i,
+            .social-bx li a:active i {
+                background: linear-gradient(45deg, #0066cb, #fe0032);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: currentColor;
+                background-clip: text;
+                color: transparent;
+            }
+        </style>
+
 <style>
-    .social-bx li a i {
-        color: #000; /* Default color */
-        font-size: 20px;
-        transition: all 0.3s ease;
-    }
+@media (max-width: 767px) {
 
-    .social-bx li a:hover i,
-    .social-bx li a:focus i,
-    .social-bx li a:active i {
-        background: linear-gradient(45deg, #0066cb, #fe0032);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: currentColor;
-        background-clip: text;
-        color: transparent;
-    }
+  /* Navigation links gradient on mobile */
+  .navbar-nav li a:hover,
+  .navbar-nav li a:focus {
+    background: -webkit-linear-gradient(to top, #0066cb, #fe0032);
+    background: linear-gradient(to top, #0066cb, #fe0032);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Social icons gradient on mobile */
+  .social-bx li a:hover i,
+  .social-bx li a:focus i,
+  .social-bx li a:active i {
+    background: -webkit-linear-gradient(to top, #0066cb, #fe0032);
+    background: linear-gradient(to top, #0066cb, #fe0032);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+}
 </style>
 
 
@@ -240,18 +270,8 @@
                                 </a>
                             </div>
                         </li>
-                        
-                        <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
-                            <div class="sx-box   image-hover-block">
-                                <div class="sx-thum-bx">
-                                    <img src="images/20241204_174511.png" alt="">
-                                </div>
 
-                                <a class="mfp-link" href="images/20241204_174511.png">
-                                    <i class="fa fa-arrows-alt"></i>
-                                </a>
-                            </div>
-                        </li>
+                        
 
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
@@ -264,17 +284,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
-                            <div class="sx-box   image-hover-block">
-                                <div class="sx-thum-bx">
-                                    <img src="images/4.png" alt="">
-                                </div>
 
-                                <a class="mfp-link" href="images/4.png">
-                                    <i class="fa fa-arrows-alt"></i>
-                                </a>
-                            </div>
-                        </li>
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -308,7 +318,7 @@
                                 </a>
                             </div>
                         </li>
-                        
+
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -342,7 +352,7 @@
                                 </a>
                             </div>
                         </li>
-                        
+
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -378,7 +388,7 @@
                                 </a>
                             </div>
                         </li>
-                        
+
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -390,7 +400,7 @@
                                 </a>
                             </div>
                         </li>
-                        
+
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -446,10 +456,10 @@
                                 </a>
                             </div>
                         </li>
-                        
-                        
 
-                        
+
+
+
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -461,17 +471,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
-                            <div class="sx-box   image-hover-block">
-                                <div class="sx-thum-bx">
-                                    <img src="images/Image(2) (2).png" alt="">
-                                </div>
 
-                                <a class="mfp-link" href="images/Image(2) (2).png">
-                                    <i class="fa fa-arrows-alt"></i>
-                                </a>
-                            </div>
-                        </li>
 
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
@@ -506,29 +506,9 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
-                            <div class="sx-box   image-hover-block">
-                                <div class="sx-thum-bx">
-                                    <img src="images/KITCHEN 2 (1).png" alt="">
-                                </div>
 
-                                <a class="mfp-link" href="images/KITCHEN 2 (1).png">
-                                    <i class="fa fa-arrows-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
-                            <div class="sx-box   image-hover-block">
-                                <div class="sx-thum-bx">
-                                    <img src="images/KITCHEN 3.png" alt="">
-                                </div>
 
-                                <a class="mfp-link" href="images/KITCHEN 3.png">
-                                    <i class="fa fa-arrows-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        
+
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -540,17 +520,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
-                            <div class="sx-box   image-hover-block">
-                                <div class="sx-thum-bx">
-                                    <img src="images/LIVING OUT 1 PT.png" alt="">
-                                </div>
 
-                                <a class="mfp-link" href="images/LIVING OUT 1 PT.png">
-                                    <i class="fa fa-arrows-alt"></i>
-                                </a>
-                            </div>
-                        </li>
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -562,8 +532,8 @@
                                 </a>
                             </div>
                         </li>
-                        
-                        
+
+
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -586,7 +556,7 @@
                                 </a>
                             </div>
                         </li>
-                       
+
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -609,7 +579,7 @@
                                 </a>
                             </div>
                         </li>
-                        
+
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -621,17 +591,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
-                            <div class="sx-box   image-hover-block">
-                                <div class="sx-thum-bx">
-                                    <img src="images/TV  Q.png" alt="">
-                                </div>
 
-                                <a class="mfp-link" href="images/TV  Q.png">
-                                    <i class="fa fa-arrows-alt"></i>
-                                </a>
-                            </div>
-                        </li>
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -643,44 +603,14 @@
                                 </a>
                             </div>
                         </li>
-                       
-                        
-                        
-                        <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
-                            <div class="sx-box   image-hover-block">
-                                <div class="sx-thum-bx">
-                                    <img src="images/v1 (2).png" alt="">
-                                </div>
 
-                                <a class="mfp-link" href="images/v1 (2).png">
-                                    <i class="fa fa-arrows-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
-                            <div class="sx-box   image-hover-block">
-                                <div class="sx-thum-bx">
-                                    <img src="images/v3.png" alt="">
-                                </div>
 
-                                <a class="mfp-link" href="images/v3.png">
-                                    <i class="fa fa-arrows-alt"></i>
-                                </a>
-                            </div>
-                        </li>
 
-                        <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
-                            <div class="sx-box   image-hover-block">
-                                <div class="sx-thum-bx">
-                                    <img src="images/living to dining.png" alt="">
-                                </div>
 
-                                <a class="mfp-link" href="images/living to dining.png">
-                                    <i class="fa fa-arrows-alt"></i>
-                                </a>
-                            </div>
-                        </li>
-                        
+
+
+
+
                         <li class="masonry-item col-xl-3  col-lg-4 col-md-6 col-sm-12 m-b30">
                             <div class="sx-box   image-hover-block">
                                 <div class="sx-thum-bx">
@@ -706,127 +636,130 @@
         <!-- CONTENT END -->
 
         <!-- FOOTER START -->
-           <footer class="site-footer footer-large  footer-light	footer-wide">
+        <footer class="site-footer footer-large  footer-light	footer-wide">
 
-        <!-- FOOTER BLOCKES START -->
-        <div class="footer-top">
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- ABOUT COMPANY -->
-                    <div class="col-lg-5 col-md-6 col-sm-6">
-                        <div class="widget widget_about">
-                            <!--<h4 class="widget-title">About Company</h4>-->
-                            <div class="logo-footer clearfix p-b15">
-                                <a href="index.html"><img src="images/LOGO-removebg-preview (2).png" alt=""></a>
+            <!-- FOOTER BLOCKES START -->
+            <div class="footer-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- ABOUT COMPANY -->
+                        <div class="col-lg-5 col-md-6 col-sm-6">
+                            <div class="widget widget_about">
+                                <!--<h4 class="widget-title">About Company</h4>-->
+                                <div class="logo-footer clearfix p-b15">
+                                    <a href="index.html"><img src="images/LOGO-removebg-preview (2).png" alt=""></a>
+                                </div>
+                                <p>We, P& G Interiors, situated at all over kerala
+                                    and bangalore , operates in the fields
+                                    of interior designing with a talented team of
+                                    designers.</p>
+
+                                <ul class="social-icons  sx-social-links">
+                                    <li><a href="https://www.facebook.com/pginteriors1" target="_blank"><i
+                                                class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/pginteriors2015" target="_blank"><i
+                                                class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:pgint1983@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                    <li><a href="tel:9447897112"><i class="fa fa-phone"></i></a></li>
+                                </ul>
                             </div>
-                            <p>We, P& G Interiors, situated at all over kerala
-                                and bangalore , operates in the fields
-                                of interior designing with a talented team of
-                                designers.</p>
-
-                            <ul class="social-icons  sx-social-links">
-                                <li><a href="https://www.facebook.com/pginteriors1" target="_blank"><i
-                                            class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://www.instagram.com/pginteriors2015" target="_blank"><i
-                                            class="fa fa-instagram"></i></a></li>
-                                <li><a href="mailto:pgint1983@gmail.com"><i class="fa fa-envelope"></i></a></li>
-                                <li><a href="tel:9447897112"><i class="fa fa-phone"></i></a></li>
-                            </ul>
                         </div>
-                    </div>
 
-                    <!-- RESENT POST -->
+                        <!-- RESENT POST -->
 
 
-                    <!-- USEFUL LINKS -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 footer-col-3">
-                        <div class="widget widget_services inline-links">
-                            <h5 class="widget-title">Useful links</h5>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                        <!-- USEFUL LINKS -->
+                        <div class="col-lg-3 col-md-6 col-sm-6 footer-col-3">
+                            <div class="widget widget_services inline-links">
+                                <h5 class="widget-title">Useful links</h5>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
 
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- CONTACT US -->
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="widget widget_address_outer">
-                            <h5 class="widget-title">Contact Us</h5>
-                            <ul class="widget_address">
-                                <li><i class="fa fa-map-marker"></i> 756 Livingston Street, Brooklyn, NY 11201, United
-                                    State</li>
-                                <li><i class="fa fa-envelope"></i><a href="mailto:pgint1983@gmail.com">
-                                        pgint1983@gmail.com</a></li>
-                                <li><i class="fa fa-phone"></i><a href="tel:+91 9961032530"> +91 9961032530</a></li>
-                                <li><i class="fa fa-phone"></i><a href="tel:+91 9447897112"> +91 9447897112</a></li>
-                                <li><i class="fa fa-phone"></i><a href="tel:+91 4734202757"> +91 4734202757</a></li>
+                        <!-- CONTACT US -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="widget widget_address_outer">
+                                <h5 class="widget-title">Contact Us</h5>
+                                <ul class="widget_address">
+                                    <li><i class="fa fa-map-marker"></i> 756 Livingston Street, Brooklyn, NY 11201,
+                                        United
+                                        State</li>
+                                    <li><i class="fa fa-envelope"></i><a href="mailto:pgint1983@gmail.com">
+                                            pgint1983@gmail.com</a></li>
+                                    <li><i class="fa fa-phone"></i><a href="tel:+91 9961032530"> +91 9961032530</a></li>
+                                    <li><i class="fa fa-phone"></i><a href="tel:+91 9447897112"> +91 9447897112</a></li>
+                                    <li><i class="fa fa-phone"></i><a href="tel:+91 4734202757"> +91 4734202757</a></li>
 
-                            </ul>
+                                </ul>
 
+                            </div>
                         </div>
+
+
+
                     </div>
-
-
-
                 </div>
-            </div>
 
-        </div>
-        <!-- FOOTER COPYRIGHT -->
-        <div class="footer-bottom overlay-wraper">
-            <div class="overlay-main"></div>
-            <div class="container">
-                <div class="clearfix">
-                    <div class="sx-footer-bot-center">
-                        <span class="copyrights-text"><a href="https://cognetz.com/" target="_blank">Designed By
-                                Cognetz</a></span>
+            </div>
+            <!-- FOOTER COPYRIGHT -->
+            <div class="footer-bottom overlay-wraper">
+                <div class="overlay-main"></div>
+                <div class="container">
+                    <div class="clearfix">
+                        <div class="sx-footer-bot-center">
+                            <span class="copyrights-text"><a href="https://cognetz.com/" target="_blank">Designed By
+                                    Cognetz</a></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
         <!-- FOOTER END -->
-<style>
-/* Apply gradient color on hover to all footer links and icons */
-footer a,
-footer .fa {
-    color: #000;
-    transition: all 0.4s ease;
-    display: inline-block;
-}
+        <style>
+            /* Apply gradient color on hover to all footer links and icons */
+            footer a,
+            footer .fa {
+                color: #000;
+                transition: all 0.4s ease;
+                display: inline-block;
+            }
 
-footer a:hover,
-footer a:active,
-footer .fa:hover,
-footer .fa:active {
-    background-image: linear-gradient(45deg, #0066cb, #fe0032);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-/* Ensure useful links get the gradient too */
-footer .widget_services a:hover,
-footer .widget_services a:active {
-    background-image: linear-gradient(45deg, #0066cb, #fe0032);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-footer .widget_services li a:hover,
-footer .widget_services li a:active {
-    background-image: linear-gradient(45deg, #0066cb, #fe0032);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-</style>
+            footer a:hover,
+            footer a:active,
+            footer .fa:hover,
+            footer .fa:active {
+                background-image: linear-gradient(45deg, #0066cb, #fe0032);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+            }
+
+            /* Ensure useful links get the gradient too */
+            footer .widget_services a:hover,
+            footer .widget_services a:active {
+                background-image: linear-gradient(45deg, #0066cb, #fe0032);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+            }
+
+            footer .widget_services li a:hover,
+            footer .widget_services li a:active {
+                background-image: linear-gradient(45deg, #0066cb, #fe0032);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+            }
+        </style>
 
         <!-- BUTTON TOP START -->
         <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
