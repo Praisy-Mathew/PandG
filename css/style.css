@@ -480,7 +480,7 @@ a:focus {
 a:active,
 a:hover,
 a:focus {
-	color: #d7b39a;
+	color:black;
 }
 
 p {
@@ -572,7 +572,7 @@ table {
 
 ::selection {
 	background: #23252d;
-	color: #fff;
+	color: linear-gradient( #0066cb, #fe0032); 
 }
 
 ::-moz-selection {
@@ -627,7 +627,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-	color: #d7b39a;
+	color:linear-gradient( #0066cb, #fe0032);
 }
 h1 a.sx-text-white:hover,
 h2 a.sx-text-white:hover,
@@ -8399,7 +8399,7 @@ padding:7px 0px;
 
 .header-botton .header-nav .nav>li>a {
 	padding: 20px 12px;
-	color: #fff;
+	color: blue;
 }
 
 .header-botton .extra-nav {
@@ -8407,7 +8407,7 @@ padding:7px 0px;
 }
 
 .header-botton .extra-nav .site-search-btn {
-	color: #fff;
+	color: blue;
 	padding: 7px 15px;
 }
 

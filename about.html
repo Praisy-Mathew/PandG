@@ -153,6 +153,42 @@
                 </div>
             </div>
         </header>
+         <style>
+    .navbar-nav li a {
+        font-weight: 600;
+        color: #000; /* default color */
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li a:focus {
+        background: linear-gradient(to right, #0066cb, #fe0032);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+</style>
+<style>
+    .social-bx li a i {
+        color: #000; /* Default color */
+        font-size: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .social-bx li a:hover i,
+    .social-bx li a:focus i,
+    .social-bx li a:active i {
+        background: linear-gradient(45deg, #0066cb, #fe0032);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: currentColor;
+        background-clip: text;
+        color: transparent;
+    }
+</style>
+
+
         <!-- HEADER END -->
 
         <!-- CONTENT START -->
@@ -161,7 +197,7 @@
             <!-- INNER PAGE BANNER -->
             <div class="sx-bnr-inr overlay-wraper bg-parallax bg-top-center" data-stellar-background-ratio="0.5"
                 style="background-image:url(images/dining.jpg);">
-                <div class="overlay-main bg-black opacity-07"></div>
+                <div class="overlay-main bg-black opacity-05"></div>
                 <div class="container">
                     <div class="sx-bnr-inr-entry">
                         <div class="banner-title-outer">
@@ -196,10 +232,15 @@
                     </div>
                     <!-- TITLE END -->
 
+
+
+
+
                     <div class="section-content">
                         <div class="row">
 
                             <div class="col-lg-8 col-md-12 col-sm-12">
+                                
                                 <div class="about-home-left">
                                     <h3 class="m-t0 sx-tilte">Dream. Design. Deliver.</h3>
                                     <p>We, P& G Interiors, situated at all over kerala
@@ -211,7 +252,7 @@
                                         architectural projects. We have completed some
                                         of the finest designs with the help of our
                                         renowned designers.</p>
-
+                                
                                 </div>
                             </div>
 
@@ -226,30 +267,7 @@
                                             </video>
                                         </div>
                                         <!-- COLUMNS 2 -->
-                                        <div class="item ">
-                                            <div class="sx-img-effect zoom-slow">
-                                                <img src="images/living to dining.png" alt="" style="height: 300px;">
-                                            </div>
-                                        </div>
-                                        <!-- COLUMNS 3 -->
-                                        <div class="item ">
-                                            <div class="sx-img-effect zoom-slow">
-                                                <img src="images/KITCHEN 1.psd PP.png" alt="" style="height: 300px;">
-                                            </div>
-                                        </div>
-                                        <!-- COLUMNS 4 -->
-                                        <div class="item ">
-                                            <div class="sx-img-effect zoom-slow">
-                                                <img src="images/MASTER BEDROOM F.png" alt="" style="height: 300px;">
-                                            </div>
-                                        </div>
-
-                                        <!-- COLUMNS 5 -->
-                                        <div class="item ">
-                                            <div class="sx-img-effect zoom-slow">
-                                                <img src="images/KITCHEN 3D.png" alt="" style="height: 300px;">
-                                            </div>
-                                        </div>
+                                        
                                     </div>
 
 
@@ -261,6 +279,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- WHAT WE DO START -->
             <div class="section-full  mobile-page-padding bg-white  p-t80 p-b50 bg-repeat overflow-hide"
                 style="background-image:url(images/background/bg-5.png);">
@@ -388,7 +407,7 @@
                             <!-- Block one -->
                             <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
 
-                                <div class="sx-icon-box-wraper  icon-count-2-outer">
+                                <div class="sx-icon-box-wraper  icon-count-2-outer" style="border-color: #0066cb;">
                                     <div class="icon-count-2 bg-white">
                                         <span class="icon-count-number">01</span>
                                         <div class="icon-xl inline-icon m-b5 scale-in-center">
@@ -763,7 +782,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <!-- ABOUT COMPANY -->
-                    <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="col-lg-5 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <!--<h4 class="widget-title">About Company</h4>-->
                             <div class="logo-footer clearfix p-b15">
@@ -803,7 +822,7 @@
                     </div>
 
                     <!-- CONTACT US -->
-                    <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="widget widget_address_outer">
                             <h5 class="widget-title">Contact Us</h5>
                             <ul class="widget_address">
@@ -840,6 +859,43 @@
         </div>
     </footer>
     <!-- FOOTER END -->
+<style>
+/* Apply gradient color on hover to all footer links and icons */
+footer a,
+footer .fa {
+    color: #000;
+    transition: all 0.4s ease;
+    display: inline-block;
+}
+
+footer a:hover,
+footer a:active,
+footer .fa:hover,
+footer .fa:active {
+    background-image: linear-gradient(45deg, #0066cb, #fe0032);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+/* Ensure useful links get the gradient too */
+footer .widget_services a:hover,
+footer .widget_services a:active {
+    background-image: linear-gradient(45deg, #0066cb, #fe0032);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+footer .widget_services li a:hover,
+footer .widget_services li a:active {
+    background-image: linear-gradient(45deg, #0066cb, #fe0032);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+</style>
 
     <!-- BUTTON TOP START -->
     <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>

@@ -153,6 +153,42 @@
                 </div>
             </div>
         </header>
+         <style>
+    .navbar-nav li a {
+        font-weight: 600;
+        color: #000; /* default color */
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li a:focus {
+        background: linear-gradient(to right, #0066cb, #fe0032);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+    }
+</style>
+<style>
+    .social-bx li a i {
+        color: #000; /* Default color */
+        font-size: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .social-bx li a:hover i,
+    .social-bx li a:focus i,
+    .social-bx li a:active i {
+        background: linear-gradient(45deg, #0066cb, #fe0032);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: currentColor;
+        background-clip: text;
+        color: transparent;
+    }
+</style>
+
+
         <!-- HEADER END -->
 
         <!-- CONTENT START -->
@@ -161,7 +197,7 @@
             <!-- INNER PAGE BANNER -->
             <div class="sx-bnr-inr overlay-wraper bg-parallax bg-top-center" data-stellar-background-ratio="0.5"
                 style="background-image:url(images/ceiling.jpg);">
-                <div class="overlay-main bg-black opacity-07"></div>
+                <div class="overlay-main bg-black opacity-05"></div>
                 <div class="container">
                     <div class="sx-bnr-inr-entry">
                         <div class="banner-title-outer">
@@ -225,7 +261,7 @@
 
                                         <div class="text-right">
                                             <button name="submit" type="submit" value="Submit"
-                                                class="site-button btn-half"><span> submit</span>
+                                                class="site-button btn-half" style="background: linear-gradient( #0066cb, #fe0032);"><span> submit</span>
 
                                             </button>
                                         </div>
@@ -298,7 +334,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <!-- ABOUT COMPANY -->
-                    <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="col-lg-5 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <!--<h4 class="widget-title">About Company</h4>-->
                             <div class="logo-footer clearfix p-b15">
@@ -338,7 +374,7 @@
                     </div>
 
                     <!-- CONTACT US -->
-                    <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="widget widget_address_outer">
                             <h5 class="widget-title">Contact Us</h5>
                             <ul class="widget_address">
@@ -375,6 +411,43 @@
         </div>
     </footer>
         <!-- FOOTER END -->
+<style>
+/* Apply gradient color on hover to all footer links and icons */
+footer a,
+footer .fa {
+    color: #000;
+    transition: all 0.4s ease;
+    display: inline-block;
+}
+
+footer a:hover,
+footer a:active,
+footer .fa:hover,
+footer .fa:active {
+    background-image: linear-gradient(45deg, #0066cb, #fe0032);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+/* Ensure useful links get the gradient too */
+footer .widget_services a:hover,
+footer .widget_services a:active {
+    background-image: linear-gradient(45deg, #0066cb, #fe0032);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+footer .widget_services li a:hover,
+footer .widget_services li a:active {
+    background-image: linear-gradient(45deg, #0066cb, #fe0032);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+</style>
 
         <!-- BUTTON TOP START -->
         <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
