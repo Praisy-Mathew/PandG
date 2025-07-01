@@ -153,72 +153,8 @@
                 </div>
             </div>
         </header>
-       
-<style>
-/* Navbar links */
-.navbar-nav li a {
-    font-weight: 600;
-    color: #000; /* fallback color */
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    -webkit-text-fill-color: initial; /* Reset for consistent behavior */
-}
 
-.navbar-nav li a:hover,
-.navbar-nav li a:focus {
-    background: linear-gradient(to right, #0066cb, #fe0032);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
 
-/* Social icons */
-.social-bx li a i {
-    color: #000;
-    font-size: 20px;
-    transition: all 0.3s ease;
-    -webkit-text-fill-color: initial;
-}
-
-.social-bx li a:hover i,
-.social-bx li a:focus i,
-.social-bx li a:active i {
-    background: linear-gradient(45deg, #0066cb, #fe0032);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-</style>
-<style>
-@media (max-width: 767px) {
-
-  /* Navigation links gradient on mobile */
-  .navbar-nav li a:hover,
-  .navbar-nav li a:focus {
-    background: -webkit-linear-gradient(to top, #0066cb, #fe0032);
-    background: linear-gradient(to top, #0066cb, #fe0032);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-  }
-
-  /* Social icons gradient on mobile */
-  .social-bx li a:hover i,
-  .social-bx li a:focus i,
-  .social-bx li a:active i {
-    background: -webkit-linear-gradient(to top, #0066cb, #fe0032);
-    background: linear-gradient(to top, #0066cb, #fe0032);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-  }
-}
-</style>
 
 
         <!-- HEADER END -->
@@ -510,8 +446,7 @@
                                             functionality and aesthetics.</li>
                                     </ul>
                                     <div class="text-left">
-                                        <a href="about.html" class="site-button-secondry btn-half"
-                                            style="background: linear-gradient( #0066cb, #fe0032);"><span>Read
+                                        <a href="about.html" class="site-button btn-half"><span>Read
                                                 More</span></a>
                                     </div>
 
@@ -693,7 +628,7 @@
                             </div>
                             <div class="text-center d-block d-md-none" style="margin: 20px 0;">
                                 <button onclick="toggleServices()" id="readMoreBtn"
-                                    style="background:linear-gradient(135deg, #0066cb, #fe0032); color:white; padding:10px 25px; border:none; border-radius:5px;">
+                                    style="background-color:#d7b39a; color:black; padding:10px 25px; border:none; border-radius:5px;">
                                     Read More
                                 </button>
                             </div>
@@ -800,10 +735,17 @@
                 /* Gradient border for all boxes */
                 .our-story {
                     border: 1px solid transparent;
-                    border-image: linear-gradient(135deg, #0066cb, #fe0032);
                     border-image-slice: 1;
                     border-radius: 10px;
                     padding: 15px;
+                }
+
+                .our-story:hover {
+                    transform: scale(1.03);
+                    /* Slight zoom */
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                    /* Stronger shadow */
+
                 }
 
                 /* Animation effect */
@@ -1615,51 +1557,7 @@
                 display: block;
             }
         </style>
-        <style>
-            @media only screen and (max-width: 575.98px) {
-                .col-sm-12 {
-                    width: 50% !important;
-                    flex: 0 0 50% !important;
-                }
-            }
 
-            .owl-dots .owl-dot span {
-                width: 12px;
-                height: 12px;
-                margin: 5px;
-                display: block;
-                background: #ccc;
-                border-radius: 50%;
-                transition: background 0.3s ease;
-            }
-
-            /* Alternate dot colors: even = blue, odd = red */
-            .owl-dots .owl-dot:nth-child(odd) span {
-                background-color: #0066cb;
-            }
-
-            .owl-dots .owl-dot:nth-child(even) span {
-                background-color: #fe0032;
-            }
-
-            /* Active dot styling */
-            .owl-dots .owl-dot.active span {
-                box-shadow: 0 0 0 2px #fff;
-                transform: scale(1.3);
-            }
-
-            .owl-dots .owl-dot.active:nth-child(odd) span {
-                background-color: #0066cb;
-                transform: scale(1.4);
-                box-shadow: 0 0 8px #0066cb;
-            }
-
-            .owl-dots .owl-dot.active:nth-child(even) span {
-                background-color: #fe0032;
-                transform: scale(1.4);
-                box-shadow: 0 0 8px #fe0032;
-            }
-        </style>
         <div class="section-full mobile-page-padding p-t30 p-b50 bg-white">
             <div class="container">
                 <div class="section-head text-center">
@@ -1816,7 +1714,7 @@
                                     </div>
                                     <span class="testimonial-position">Homeowner – Kochi</span>
                                     <h4 class="testimonial-name">Anjali R.</h4>
-                                    <span class="fa fa-quote-right" style="color:  #0066cb;"></span>
+                                    <span class="fa fa-quote-right"></span>
                                 </div>
                                 <div class="testimonial-text">
                                     <p>P&G Interiors turned my house into a dream home. Their designs were stunning, and
@@ -1836,7 +1734,7 @@
                                     </div>
                                     <span class="testimonial-position">Apartment Owner – Calicut</span>
                                     <h4 class="testimonial-name">Rajeev Menon</h4>
-                                    <span class="fa fa-quote-right" style="color: #fe0032 ;"></span>
+                                    <span class="fa fa-quote-right"></span>
                                 </div>
                                 <div class="testimonial-text">
                                     <p>The P&G team was professional and punctual. From design to handover, the process
@@ -1856,7 +1754,7 @@
                                     </div>
                                     <span class="testimonial-position">Villa Owner – Bangalore</span>
                                     <h4 class="testimonial-name">Megha S.</h4>
-                                    <span class="fa fa-quote-right" style="color:  #0066cb;"></span>
+                                    <span class="fa fa-quote-right"></span>
                                 </div>
                                 <div class="testimonial-text">
                                     <p>The 3D designs helped us visualize everything in advance. Their work was elegant
@@ -1914,6 +1812,14 @@
 
 
                     <!-- RESENT POST -->
+                    <style>
+                        @media only screen and (max-width: 575.98px) {
+                            .col-sm-12 {
+                                width: 50% !important;
+                                flex: 0 0 50% !important;
+                            }
+                        }
+                    </style>
 
 
                     <!-- USEFUL LINKS -->
@@ -1967,45 +1873,7 @@
             </div>
         </div>
     </footer>
-    <style>
-        /* Apply gradient color on hover to all footer links and icons */
-        footer a,
-        footer .fa {
-            color: #000;
-            transition: all 0.4s ease;
-            display: inline-block;
-        }
 
-        footer a:hover,
-        footer a:active,
-        footer .fa:hover,
-        footer .fa:active {
-            background-image: linear-gradient(45deg, #0066cb, #fe0032);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-        }
-
-        /* Ensure useful links get the gradient too */
-        footer .widget_services a:hover,
-        footer .widget_services a:active {
-            background-image: linear-gradient(45deg, #0066cb, #fe0032);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-        }
-
-        footer .widget_services li a:hover,
-        footer .widget_services li a:active {
-            background-image: linear-gradient(45deg, #0066cb, #fe0032);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-        }
-    </style>
 
     <!-- FOOTER END -->
 
@@ -2037,30 +1905,13 @@
                 <div class="cssload-cube cssload-cube15"></div>
             </div>
         </div>
-    </div> 
-     <style>
-    .cssload-cube {
-        
-        background-color: #0066cb; /* default fallback */
-        
-    }
+    </div>
 
-    .cssload-cube:nth-child(odd) {
-        background-color: #0066cb; /* blue */
-    }
-
-    .cssload-cube:nth-child(even) {
-        background-color: #fe0032; /* red */
-    }
-
-   
- 
-</style>
-<script>
-    window.addEventListener("load", function () {
-        document.querySelector(".loading-area").style.display = "none";
-    });
-</script>
+    <script>
+        window.addEventListener("load", function () {
+            document.querySelector(".loading-area").style.display = "none";
+        });
+    </script>
 
     <!-- LOADING AREA  END ====== -->
     <script>

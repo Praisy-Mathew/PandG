@@ -27,10 +27,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, a:active
 
 /*-----Border Color-----*/
 .get-in-touch-btn.from-top::before,.about-home-left,.from-top::before, .image-effect-one .mfp-link{
-	border-color:black;
-	border-top-color:#0066cb ;
-    border-right-color:#0066cb ;
-    border-bottom-color: red;
-    border-left-color: red;
+	border-color:#d7b39a;
+	
 	
 }
