@@ -153,7 +153,7 @@
                 </div>
             </div>
         </header>
-         
+
 
 
         <!-- HEADER END -->
@@ -170,12 +170,13 @@
                         <div class="banner-title-outer">
                             <div class="banner-title-name">
                                 <h2 class="m-tb0">Contact Us</h2>
-                                <p>Get in touch with P&G Interiors to bring your dream space to life — we’re just a message away.</p>
+                                <p>Get in touch with P&G Interiors to bring your dream space to life — we’re just a
+                                    message away.</p>
                             </div>
                         </div>
                         <!-- BREADCRUMB ROW -->
 
-                        
+
 
                         <!-- BREADCRUMB ROW END -->
                     </div>
@@ -193,8 +194,7 @@
                         <!-- CONTACT FORM-->
                         <div class="row">
                             <div class="col-lg-8 col-md-12 col-sm-12">
-                                <form class="contact-form cons-contact-form bg-gray p-a30" method="post"
-                                    action="form-handler.php">
+                                <form class="contact-form cons-contact-form bg-gray p-a30" id="whatsappForm">
                                     <div class="contact-one">
 
                                         <!-- TITLE START -->
@@ -209,32 +209,73 @@
                                         <!-- TITLE END -->
 
                                         <div class="form-group">
-                                            <input name="username" type="text" required class="form-control"
-                                                placeholder="Name">
+                                            <input name="username" id="username" type="text" required
+                                                class="form-control" placeholder="Name">
                                         </div>
 
                                         <div class="form-group">
-                                            <input name="email" type="text" class="form-control" required
+                                            <input name="email" id="email" type="text" class="form-control" required
                                                 placeholder="Email">
                                         </div>
                                         <div class="form-group">
-                                            <input name="phone" type="number" class="form-control" required
+                                            <input name="phone" id="phone" type="number" class="form-control" required
                                                 placeholder="Phone">
                                         </div>
                                         <div class="form-group">
-                                            <textarea name="message" rows="4" class="form-control " required
-                                                placeholder="Message"></textarea>
+                                            <textarea name="message" id="message" rows="4" class="form-control "
+                                                required placeholder="Message"></textarea>
                                         </div>
 
                                         <div class="text-right">
-                                            <button name="submit" type="submit" value="Submit"
-                                                class="site-button btn-half"><span> submit</span>
-
-                                            </button>
+                                            <button type="submit"
+                                                class="site-button btn-half"><span>Submit</span></button>
                                         </div>
 
                                     </div>
                                 </form>
+
+                                <script>
+                                    document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+                                        e.preventDefault(); // Prevent page reload
+
+                                        // Get form values by name
+                                        const name = document.querySelector('[name="username"]').value.trim();
+                                        const email = document.querySelector('[name="email"]').value.trim();
+                                        const phone = document.querySelector('[name="phone"]').value.trim();
+                                        const message = document.querySelector('[name="message"]').value.trim();
+
+                                        // Check if all fields are filled
+                                        if (!name || !email || !phone || !message) {
+                                            alert("Please fill out all fields.");
+                                            return;
+                                        }
+
+                                        // WhatsApp number (country code + number, no + or spaces)
+                                        const whatsappNumber = "919447897112";
+
+                                        // Format message (use encodeURIComponent to handle special characters)
+                                        const text = encodeURIComponent(
+                                            `Contact Form Inquiry:\n\n` +
+                                            `Name: ${name}\n` +
+                                            `Email: ${email}\n` +
+                                            `Phone: ${phone}\n` +
+                                            `Message: ${message}`
+                                        );
+
+                                        // Create WhatsApp URL
+                                        const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+
+                                        // Open in new tab
+                                        const win = window.open(url, "_blank");
+
+                                        // If popup blocked
+                                        if (!win) {
+                                            window.location.href = url;
+                                        }
+                                    });
+                                </script>
+
+
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12">
                                 <div class="contact-info block-shadow bg-white bg-center p-a40"
@@ -275,8 +316,9 @@
                                             <div class="icon-content">
                                                 <h5 class="m-t0">Address info</h5>
                                                 <p>P&G INTERIORS
-GMM Building, 1st Floor,  COURT ROAD, NEAR SREEMOOLAM MARKET,  Parass La, MG Road, Adoor, Pathanamthitta Dist, Kerala
-691523</p>
+                                                    GMM Building, 1st Floor, COURT ROAD, NEAR SREEMOOLAM MARKET, Parass
+                                                    La, MG Road, Adoor, Pathanamthitta Dist, Kerala
+                                                    691523</p>
                                             </div>
                                         </div>
                                     </div>
@@ -288,100 +330,104 @@ GMM Building, 1st Floor,  COURT ROAD, NEAR SREEMOOLAM MARKET,  Parass La, MG Roa
 
                 </div>
             </div>
-          
+
             <!-- SECTION CONTENT END -->
 
         </div>
         <!-- CONTENT END -->
-<div style="width: 100%; height: 300px;">
-   <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3756.2790893422275!2d76.72938095811159!3d9.15941129386295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMDknMjguNiJOIDc2wrA0Myc1Ni4yIkU!5e0!3m2!1sen!2sin!4v1751391160040!5m2!1sen!2sin" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+        <div style="width: 100%; height: 300px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3756.2790893422275!2d76.72938095811159!3d9.15941129386295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMDknMjguNiJOIDc2wrA0Myc1Ni4yIkU!5e0!3m2!1sen!2sin!4v1751391160040!5m2!1sen!2sin"
+                width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
         <!-- FOOTER START -->
-       <footer class="site-footer footer-large  footer-light	footer-wide">
+        <footer class="site-footer footer-large  footer-light	footer-wide">
 
-        <!-- FOOTER BLOCKES START -->
-        <div class="footer-top">
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- ABOUT COMPANY -->
-                    <div class="col-lg-5 col-md-6 col-sm-6">
-                        <div class="widget widget_about">
-                            <!--<h4 class="widget-title">About Company</h4>-->
-                            <div class="logo-footer clearfix p-b15">
-                                <a href="index.html"><img src="images/LOGO-removebg-preview (2).png" alt=""></a>
+            <!-- FOOTER BLOCKES START -->
+            <div class="footer-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- ABOUT COMPANY -->
+                        <div class="col-lg-5 col-md-6 col-sm-6">
+                            <div class="widget widget_about">
+                                <!--<h4 class="widget-title">About Company</h4>-->
+                                <div class="logo-footer clearfix p-b15">
+                                    <a href="index.html"><img src="images/LOGO-removebg-preview (2).png" alt=""></a>
+                                </div>
+                                <p>We, P& G Interiors, situated at all over kerala
+                                    and bangalore , operates in the fields
+                                    of interior designing with a talented team of
+                                    designers.</p>
+
+                                <ul class="social-icons  sx-social-links">
+                                    <li><a href="https://www.facebook.com/pginteriors1" target="_blank"><i
+                                                class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/pginteriors2015" target="_blank"><i
+                                                class="fa fa-instagram"></i></a></li>
+                                    <li><a href="mailto:pgint1983@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                    <li><a href="tel:9447897112"><i class="fa fa-phone"></i></a></li>
+                                </ul>
                             </div>
-                            <p>We, P& G Interiors, situated at all over kerala
-                                and bangalore , operates in the fields
-                                of interior designing with a talented team of
-                                designers.</p>
-
-                            <ul class="social-icons  sx-social-links">
-                                <li><a href="https://www.facebook.com/pginteriors1" target="_blank"><i
-                                            class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://www.instagram.com/pginteriors2015" target="_blank"><i
-                                            class="fa fa-instagram"></i></a></li>
-                                <li><a href="mailto:pgint1983@gmail.com"><i class="fa fa-envelope"></i></a></li>
-                                <li><a href="tel:9447897112"><i class="fa fa-phone"></i></a></li>
-                            </ul>
                         </div>
-                    </div>
 
-                    <!-- RESENT POST -->
+                        <!-- RESENT POST -->
 
 
-                    <!-- USEFUL LINKS -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 footer-col-3">
-                        <div class="widget widget_services inline-links">
-                            <h5 class="widget-title">Useful links</h5>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                        <!-- USEFUL LINKS -->
+                        <div class="col-lg-3 col-md-6 col-sm-6 footer-col-3">
+                            <div class="widget widget_services inline-links">
+                                <h5 class="widget-title">Useful links</h5>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
 
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- CONTACT US -->
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="widget widget_address_outer">
-                            <h5 class="widget-title">Contact Us</h5>
-                            <ul class="widget_address">
-                                <li><i class="fa fa-map-marker"></i> P&G INTERIORS
-GMM Building, 1st Floor,  COURT ROAD, NEAR SREEMOOLAM MARKET,  Parass La, MG Road, Adoor, Pathanamthitta, Kerala</li>
-                                <li><i class="fa fa-envelope"></i><a href="mailto:pgint1983@gmail.com">
-                                        pgint1983@gmail.com</a></li>
-                                <li><i class="fa fa-phone"></i><a href="tel:+91 9961032530"> +91 9961032530</a></li>
-                                <li><i class="fa fa-phone"></i><a href="tel:+91 9447897112"> +91 9447897112</a></li>
-                                <li><i class="fa fa-phone"></i><a href="tel:+91 4734202757"> +91 4734202757</a></li>
+                        <!-- CONTACT US -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="widget widget_address_outer">
+                                <h5 class="widget-title">Contact Us</h5>
+                                <ul class="widget_address">
+                                    <li><i class="fa fa-map-marker"></i> P&G INTERIORS
+                                        GMM Building, 1st Floor, COURT ROAD, NEAR SREEMOOLAM MARKET, Parass La, MG Road,
+                                        Adoor, Pathanamthitta, Kerala</li>
+                                    <li><i class="fa fa-envelope"></i><a href="mailto:pgint1983@gmail.com">
+                                            pgint1983@gmail.com</a></li>
+                                    <li><i class="fa fa-phone"></i><a href="tel:+91 9961032530"> +91 9961032530</a></li>
+                                    <li><i class="fa fa-phone"></i><a href="tel:+91 9447897112"> +91 9447897112</a></li>
+                                    <li><i class="fa fa-phone"></i><a href="tel:+91 4734202757"> +91 4734202757</a></li>
 
-                            </ul>
+                                </ul>
 
+                            </div>
                         </div>
+
+
+
                     </div>
-
-
-
                 </div>
+
             </div>
 
-        </div>
-        
-        <!-- FOOTER COPYRIGHT -->
-        <div class="footer-bottom overlay-wraper">
-            <div class="overlay-main"></div>
-            <div class="container">
-                <div class="clearfix">
-                    <div class="sx-footer-bot-center">
-                        <span class="copyrights-text"><a href="https://cognetz.com/" target="_blank">Designed By
-                                Cognetz</a></span>
+            <!-- FOOTER COPYRIGHT -->
+            <div class="footer-bottom overlay-wraper">
+                <div class="overlay-main"></div>
+                <div class="container">
+                    <div class="clearfix">
+                        <div class="sx-footer-bot-center">
+                            <span class="copyrights-text"><a href="https://cognetz.com/" target="_blank">Designed By
+                                    Cognetz</a></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
         <!-- FOOTER END -->
 
         <!-- BUTTON TOP START -->
@@ -414,23 +460,24 @@ GMM Building, 1st Floor,  COURT ROAD, NEAR SREEMOOLAM MARKET,  Parass La, MG Roa
             </div>
         </div>
     </div>  -->
-     <style>
-    .cssload-cube {
-        
-        background-color: #0066cb; /* default fallback */
-        
-    }
+    <style>
+        .cssload-cube {
 
-    .cssload-cube:nth-child(odd) {
-        background-color: #0066cb; /* blue */
-    }
+            background-color: #0066cb;
+            /* default fallback */
 
-    .cssload-cube:nth-child(even) {
-        background-color: #fe0032; /* red */
-    }
+        }
 
-    
-</style>
+        .cssload-cube:nth-child(odd) {
+            background-color: #0066cb;
+            /* blue */
+        }
+
+        .cssload-cube:nth-child(even) {
+            background-color: #fe0032;
+            /* red */
+        }
+    </style>
     <!-- LOADING AREA  END ====== -->
 
     <!-- JAVASCRIPT  FILES ========================================= -->
@@ -448,7 +495,7 @@ GMM Building, 1st Floor,  COURT ROAD, NEAR SREEMOOLAM MARKET,  Parass La, MG Roa
     <script src="js/stellar.min.js"></script><!-- PARALLAX BG IMAGE   -->
     <script src="js/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
     <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
-    
+
     <!-- GOOGLE MAP -->
     <script src="js/map.script.js"></script><!-- MAP FUCTIONS [ this file use with google map]  -->
     <script src="js/jquery.bgscroll.js"></script><!-- BACKGROUND SCROLL -->
