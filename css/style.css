@@ -635,7 +635,7 @@ h3 a.sx-text-white:hover,
 h4 a.sx-text-white:hover,
 h5 a.sx-text-white:hover,
 h6 a.sx-text-white:hover {
-	color: #d7b39a;
+	color: #EA621A;
 }
 
 h1 {
@@ -8683,7 +8683,7 @@ padding:7px 0px;
 
 .header-nav .nav>li>a:hover {
 	background-color: transparent;
-	color: #212427;
+	color: #EA621A;
 }
 
 .header-nav .nav>li>a:active,
@@ -8694,11 +8694,11 @@ padding:7px 0px;
 .header-nav .nav>li.active>a,
 .header-nav .nav>li.current-menu-item>a {
 	background-color: transparent;
-	color: #d7b39a;
+	color: #EA621A;
 }
 
 .header-nav .nav>li:hover>a {
-	color: #d7b39a;
+	color:#EA621A ;
 }
 
 .header-nav .nav>li:hover>.sub-menu,
@@ -10217,7 +10217,7 @@ padding:7px 0px;
 button.scroltop {
 	height: 40px;
 	width: 40px;
-	background: #000;
+	background: #F1961A;
 	border: none;
 	position: fixed;
 	right: 15px;
